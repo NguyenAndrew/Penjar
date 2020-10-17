@@ -7,7 +7,7 @@ const app = express();
 app.use(helmet());
 
 app.get('/health', (req, res) => {
-    res.status(200).send("Hello World!");
+    res.status(200).send("Healthy!");
     axios.post('http://localhost:3001/axios-test');
 });
 

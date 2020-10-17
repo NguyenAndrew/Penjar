@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [health, setHealth] = useState('');
+
+  useEffect(() => {
+    async function fetchData() {
+      const result = await axios.get('./health');
+      setHealth(result.data);
+    }
+
+    fetchData();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +28,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {health}
         </a>
       </header>
     </div>

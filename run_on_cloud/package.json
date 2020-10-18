@@ -1,0 +1,16 @@
+{
+  "name": "run_on_cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:backend": "cd ../back_end && npm install",
+    "install:frontend": "cd ../front_end && npm install",
+    "build:frontend": "cd ../front_end && npm run build",
+    "build:frontend:windows": "cd ../front_end && npm run build:windows",
+    "start": "cd ../back_end && npm run start",
+    "start:windows": "cd ../back_end && npm run start:cloud:windows"
+  },
+  "author": "",
+  "license": "MIT"
+}

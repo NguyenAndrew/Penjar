@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install:all": "npm install && concurrently \"cd ../back_end && npm install\" \"cd ../front_end && npm install\"",
-    "start:all": "concurrently \"cd ../back_end && npm run start:local\" \"cd ../front_end && npm run start:local\""
+    "start:all": "concurrently \"cd ../back_end && npm run start:local:windows\" \"cd ../front_end && npm run start:local\""
   },
   "author": "",
   "license": "MIT",

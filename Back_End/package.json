@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "start:local": "nodemon src/server.js"
+    "start": "NODE_ENV=cloud node src/server.js",
+    "start:local:windows": "set NODE_ENV=local&& nodemon src/server.js"
   },
   "author": "",
   "license": "MIT",

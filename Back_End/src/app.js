@@ -6,6 +6,12 @@ const app = express();
 
 app.use(helmet());
 
+const nodeEnvToHostMap = {
+    'local': 'http://localhost:3001',
+    'cloud': 'http://localhost:8000'
+}
+const host = nodeEnvToHostMap[process.env.NODE_ENV];
+
 app.get('/health', (req, res) => {
     res.status(200).send("Healthy!");
     axios.post(`${host}/axios-test`);
@@ -30,11 +36,5 @@ if (process.env.NODE_ENV === 'cloud') {
 } else {
     console.log("Server is not running on the cloud");
 }
-
-const nodeEnvToHostMap = {
-    'local': 'http://localhost:3001',
-    'cloud': 'http://localhost:8000'
-}
-const host = nodeEnvToHostMap[process.env.NODE_ENV];
 
 module.exports = app;

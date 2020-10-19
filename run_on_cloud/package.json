@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "ci:backend": "cd ../back_end && npm ci --production",
+    "ci:frontend": "cd ../front_end && npm ci --production",
     "install:backend": "cd ../back_end && npm install",
     "install:frontend": "cd ../front_end && npm install",
     "build:frontend": "cd ../front_end && npm run build",

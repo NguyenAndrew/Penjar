@@ -15,7 +15,7 @@ const host = (() => {
     return nodeEnvToHostMap[process.env.NODE_ENV];
 })();
 
-let databaseInfo = (() => {
+const databaseInfo = (() => {
     if (fs.existsSync(path.join(__dirname, 'database.json'))) {
         console.log('database.json has been found. Grabbing information from json');
         return JSON.parse(fs.readFileSync(path.join(__dirname, 'database.json')));

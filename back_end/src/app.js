@@ -19,6 +19,7 @@ app.get('/health', (req, res) => {
 
 app.post('/axios-test', (req, res) => {
     console.log("You have succesfully made an axios call!");
+    res.status(200).send("axios-test completed succesfully!")
 });
 
 if (process.env.NODE_ENV === 'cloud') {

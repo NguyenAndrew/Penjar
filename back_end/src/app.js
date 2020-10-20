@@ -1,16 +1,28 @@
 const axios = require('axios');
 const path = require('path');
 const express = require('express');
+const fs = require('fs');
 const helmet = require('helmet');
 const app = express();
 
 app.use(helmet());
 
-const nodeEnvToHostMap = {
-    'local': 'http://localhost:3001',
-    'cloud': 'http://localhost:8000'
-}
-const host = nodeEnvToHostMap[process.env.NODE_ENV];
+const host = (() => {
+    const nodeEnvToHostMap = {
+        'local': 'http://localhost:3001',
+        'cloud': 'http://localhost:8000'
+    }
+    return nodeEnvToHostMap[process.env.NODE_ENV];
+})();
+
+let databaseInfo = (() => {
+    if (fs.existsSync(path.join(__dirname, 'database.json'))) {
+        console.log('database.json has been found. Grabbing information from json');
+        return JSON.parse(fs.readFileSync(path.join(__dirname, 'database.json')));
+    } else {
+        console.log('No database.json found. Grabbing database information from env variables');
+    }
+})();
 
 app.get('/health', (req, res) => {
     res.status(200).send("Healthy!");

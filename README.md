@@ -19,6 +19,11 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 3. Make changes
 4. Click save button!
 
+## Quickstart - (Optional) Configuring a database
+1. Navigate to the back_end directory
+2. For local setup: Create a database.json file in the **src** directory, configure this information with database credentials (Note: database.json in src directory is excluded by git in .gitignore).
+3. For cloud setup: Place database credentials within env variables, parse this information by inserting custom code into app.js
+4. Configure database client
+
 ## Roadmap
 * Setup Jest testing on the backend
-* Setup PostgreSQL optional configuration on the backend

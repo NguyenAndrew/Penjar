@@ -1,4 +1,4 @@
-const app = require('./app.js');
+import app from './app.js';
 
 const nodeEnvToPortMap = {
   'local': 3001,
@@ -7,10 +7,14 @@ const nodeEnvToPortMap = {
 
 console.log(`NODE_ENV is ${process.env.NODE_ENV}`);
 if (process.env.NODE_ENV === undefined) {
-  throw new Error('Missing NODE_ENV environment variable');
+  throw new Error("Node Env must be defined");
 }
+if (process.env.NODE_ENV !== 'local' && process.env.NODE_ENV !== 'cloud') {
+  throw new Error("Node Env must be either 'local' or 'cloud'");
+}
+const nodeEnv: 'local' | 'cloud' = process.env.NODE_ENV;
 
-const port = nodeEnvToPortMap[process.env.NODE_ENV];
+const port = nodeEnvToPortMap[nodeEnv];
 console.log (`PORT is ${port}`);
 
 if (port === undefined) {

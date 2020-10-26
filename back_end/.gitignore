@@ -89,3 +89,6 @@ About
 
 # Database information
 src/database.json
+
+# Output of 'TypeScript'
+*.js

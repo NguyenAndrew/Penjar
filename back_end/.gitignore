@@ -90,5 +90,5 @@ About
 # Database information
 **/database.json
 
-# Output of 'TypeScript'
-*.js
+# Output of 'TypeScript' compile (also known as 'build' in this project)
+build

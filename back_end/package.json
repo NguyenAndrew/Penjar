@@ -4,11 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "npm run tsc && NODE_ENV=cloud node src/server.js",
-    "start:cloud:windows": "npm run tsc && set NODE_ENV=cloud&& node src/server.js",
-    "start:local:windows": "set NODE_ENV=local&& nodemon --ext ts,json --exec \"npm run tsc && node src/server.js\"",
-    "tsc": "tsc",
-    "rimraf:clean:js": "rimraf src/**/*.js"
+    "start": "npm run build && NODE_ENV=cloud node build/server.js",
+    "start:cloud:windows": "npm run build && set NODE_ENV=cloud&& node build/server.js",
+    "start:local:windows": "set NODE_ENV=local&& nodemon --ext ts,json --exec \"npm run build && node build/server.js\"",
+    "build": "tsc --outDir build",
+    "clean:build": "rimraf build"
   },
   "author": "",
   "license": "MIT",

@@ -9,8 +9,8 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 ## QuickStart - Running Locally
 1. Navigate to the run_locally directory
 2. Open terminal of choice in the run_locally directory
-3. Install your dependencies with ```npm run install:all```
-5. Run your application with ```npm run start:all```
+3. Install your dependencies with ```npm install```
+5. Run your application with ```npm run start```
 6. Ready to Code!
 
 ## Quickstart - Editting Diagrams
@@ -26,8 +26,7 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 4. Configure database client
 
 ## Roadmap
-* Use `npm install` with `npm postinstall` instead of `npm install:all`
-* Use `npm start` instead of `npm start:all`
+* Bug: non ts files should be copied over from src to build (example: json)
 * Clearly define seperate commands for Windows, Linux, and Mac for better user experience cross platform
 * Run on Docker
 * Setup Jest testing on the backend

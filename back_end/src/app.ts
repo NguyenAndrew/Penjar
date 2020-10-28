@@ -25,8 +25,6 @@ if (process.env.NODE_ENV === 'cloud') {
 
     const frontEndBuildFolder = "front_end/build";
 
-    console.log(path.join(__dirname, '../..', frontEndBuildFolder));
-
     app.use(express.static(path.join(__dirname, '../..', frontEndBuildFolder)));
 
     app.get('/', (_req: Request, res: Response) => {

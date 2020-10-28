@@ -1,8 +1,9 @@
 import axios from 'axios';
 import path from 'path';
 import express, { Request, Response } from 'express';
-import fs from 'fs';
 import helmet from 'helmet';
+import './database/databaseInfo';
+import databaseInfo from './database/databaseInfo';
 
 const app = express();
 
@@ -24,20 +25,6 @@ const host = (() => {
 
     return nodeEnvToHostMap[nodeEnv];
 })();
-
-const databaseInfo: { [key: string]: string }  = (() => {
-    if (fs.existsSync(path.join(__dirname, 'database.json'))) {
-        console.log('database.json has been found. Grabbing information from json');
-        return JSON.parse(fs.readFileSync(path.join(__dirname, 'database.json'), 'utf8'));
-    } else {
-        console.log('No database.json found. Grabbing database information from env variables');
-        // Insert database information here
-        return {};
-    }
-})();
-if (databaseInfo === undefined) {
-    throw new Error('databaseInfo should not be undefined');
-}
 
 app.get('/health', (req: Request, res: Response) => {
     res.status(200).send("Healthy!");

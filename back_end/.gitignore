@@ -88,7 +88,7 @@ Blog
 About
 
 # Database information
-src/database.json
+**/database.json
 
 # Output of 'TypeScript'
 *.js

@@ -26,6 +26,7 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 4. Configure database client
 
 ## Roadmap
+* Compile to a separate 'build' directory on backend, instead of in place, to make it more convent to develop when running locally
 * Use `npm install` with `npm postinstall` instead of `npm install:all`
 * Use `npm start` instead of `npm start:all`
 * Clearly define seperate commands for Windows, Linux, and Mac for better user experience cross platform

@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2020-10-27
+### Changed
+- When running locally on back end, watch all files regardless of extension, but don't watch build directory
+
+### Fixed
+- Non ts files are copied over from src to build (example: json)
+
 ## [0.4.0] - 2020-10-27
 ### Changed
 - Use `npm install` with `npm postinstall` instead of `npm install:all` when running locally

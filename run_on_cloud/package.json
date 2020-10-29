@@ -8,12 +8,15 @@
     "ci:frontend": "cd ../front_end && npm ci --production",
     "install:backend": "cd ../back_end && npm install",
     "install:frontend": "cd ../front_end && npm install",
+    "build:backend": "cd ../back_end && npm run build",
     "build:frontend": "npm run build:frontend:linux",
     "build:frontend:windows": "cd ../front_end && npm run build:windows",
     "build:frontend:linux": "cd ../front_end && npm run build:linux",
     "build:frontend:mac": "cd ../front_end && npm run build:mac",
     "start": "cd ../back_end && npm run start",
-    "start:windows": "cd ../back_end && npm run start:cloud:windows"
+    "start:windows": "cd ../back_end && npm run start:cloud:windows",
+    "start:linux": "cd ../back_end && npm run start:cloud:linux",
+    "start:mac": "cd ../back_end && npm run start:cloud:mac"
   },
   "author": "",
   "license": "MIT"

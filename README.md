@@ -31,5 +31,4 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 4. Configure database client
 
 ## Roadmap
-* Run on Docker
 * Setup Jest testing on the backend

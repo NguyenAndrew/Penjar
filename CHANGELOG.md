@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2020-10-28
+### Added
+- Added prune commands to remove devDependencies when running on the cloud or docker 
+
+### Changed
+- Let ci commands when running on cloud or docker install the devDependencies, so that builds can be made using tsc
+
 ## [0.8.0] - 2020-10-28
 ### Added
 - Support for docker

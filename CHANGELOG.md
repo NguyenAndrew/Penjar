@@ -4,7 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.9.0] - 2020-10-28
+## [0.10.0] - 2020-10-29
+### Changed
+- Make docker commands more specific in README
+- Let ci commands when running on cloud or docker install the devDependencies, so that builds can be made using tsc
+- Change ports to 8080 when running on cloud or docker to match default expected CloudFoundry diego port 
+
+### Fixed
+- Fix changelog dates
+
+## [0.9.0] - 2020-10-29
 ### Added
 - Added prune commands to remove devDependencies when running on the cloud or docker 
 

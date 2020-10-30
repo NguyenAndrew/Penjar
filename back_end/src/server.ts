@@ -2,7 +2,7 @@ import app from './app.js';
 
 const nodeEnvToPortMap = {
   'local': 3001,
-  'cloud': 8000
+  'cloud': 8080
 };
 
 console.log(`NODE_ENV is ${process.env.NODE_ENV}`);

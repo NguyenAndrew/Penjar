@@ -11,5 +11,5 @@ RUN npm run build:frontend
 RUN npm run prune:backend
 RUN npm run prune:frontend
 
-EXPOSE 8000
+EXPOSE 8080
 CMD ["npm", "run", "start"]

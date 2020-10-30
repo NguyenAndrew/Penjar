@@ -9,7 +9,7 @@ const nodeEnv: 'local' | 'cloud' = process.env.NODE_ENV;
 const host = (() => {
     const nodeEnvToHostMap = {
         'local': 'http://localhost:3001',
-        'cloud': 'http://localhost:8000'
+        'cloud': 'http://localhost:8080'
     }
 
     return nodeEnvToHostMap[nodeEnv];

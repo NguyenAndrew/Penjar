@@ -15,8 +15,8 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 
 ## QuickStart - Running on Docker
 1. Make sure you are on the root directory
-2. Build the docker image: `docker build -t my-nodejs-app .`
-3. Run the image as a docker container: `docker run -p 8000:8000 -it --rm --name my-running-app my-nodejs-app`
+2. Build the docker image: `docker build -t my-penjar-app-image .`
+3. Run the image as a docker container: `docker run -p 8080:8080 -it --rm --name my-running-penjar-app-container my-penjar-app-image`
 
 ## Quickstart - Editting Diagrams
 1. Download [Draw.io Desktop Edition](https://github.com/jgraph/drawio-desktop/releases)

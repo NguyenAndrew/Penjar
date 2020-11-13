@@ -8,7 +8,8 @@
     "start": "npm run start:windows",
     "start:windows": "concurrently \"cd ../back_end && npm run start:local:windows\" \"cd ../front_end && npm run start:local\"",
     "start:linux": "concurrently \"cd ../back_end && npm run start:local:linux\" \"cd ../front_end && npm run start:local:linux\"",
-    "start:mac": "concurrently \"cd ../back_end && npm run start:local:mac\" \"cd ../front_end && npm run start:local:mac\""
+    "start:mac": "concurrently \"cd ../back_end && npm run start:local:mac\" \"cd ../front_end && npm run start:local:mac\"",
+    "test": "concurrently \"cd ../back_end && npm run test\" \"cd ../front_end && npm run test -- --watchAll=false\""
   },
   "author": "",
   "license": "MIT",

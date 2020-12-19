@@ -8,12 +8,12 @@
     "clean:build": "rimraf build",
     "start": "npm run start:cloud:linux",
     "test": "jest",
-    "start:cloud:windows": "set NODE_ENV=cloud&& node build/server.js",
-    "start:cloud:linux": "NODE_ENV=cloud node build/server.js",
-    "start:cloud:mac": "NODE_ENV=cloud node build/server.js",
-    "start:local:windows": "set NODE_ENV=local&& nodemon --ignore build/ --ext \"*\" --exec \"npm run build && node build/server.js\"",
-    "start:local:linux": "NODE_ENV=local nodemon --ignore build/ --ext \"*\" --exec \"npm run build && node build/server.js\"",
-    "start:local:mac": "NODE_ENV=local nodemon --ignore build/ --ext \"*\" --exec \"npm run build && node build/server.js\""
+    "start:cloud:windows": "set NODE_ENV=cloud&& node build/src/server.js",
+    "start:cloud:linux": "NODE_ENV=cloud node build/src/server.js",
+    "start:cloud:mac": "NODE_ENV=cloud node build/src/server.js",
+    "start:local:windows": "set NODE_ENV=local&& nodemon --ignore build/ --ext \"*\" --exec \"npm run build && node build/src/server.js\"",
+    "start:local:linux": "NODE_ENV=local nodemon --ignore build/ --ext \"*\" --exec \"npm run build && node build/src/server.js\"",
+    "start:local:mac": "NODE_ENV=local nodemon --ignore build/ --ext \"*\" --exec \"npm run build && node build/src/server.js\""
   },
   "author": "",
   "license": "MIT",

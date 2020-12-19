@@ -25,10 +25,10 @@ if (process.env.NODE_ENV === 'cloud') {
 
     const frontEndBuildFolder = "front_end/build";
 
-    app.use(express.static(path.join(__dirname, '../..', frontEndBuildFolder)));
+    app.use(express.static(path.join(__dirname, '../../..', frontEndBuildFolder)));
 
     app.get('/', (_req: Request, res: Response) => {
-        res.sendFile(path.join(__dirname, '../..', frontEndBuildFolder, "index.html"));
+        res.sendFile(path.join(__dirname, '../../..', frontEndBuildFolder, "index.html"));
     });
 } else {
     console.log("Server is not running on the cloud");

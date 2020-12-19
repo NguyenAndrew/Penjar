@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2020-12-19
+### Fixed
+- Being able to run on docker, by changing to the correct relative paths when running application from build folder
+
 ## [0.11.0] - 2020-11-13
 ### Added
 - Jest testing on the backend

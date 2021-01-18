@@ -32,4 +32,3 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 
 ## Roadmap
 * Add rest of tests for existing code on the back end
-* Add linting to back end

@@ -1,21 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import axios from "axios";
 
-function App() {
-  const [health, setHealth] = useState('');
+function App(): JSX.Element {
+  const [health, setHealth] = useState("");
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios.get('./health');
+      const result = await axios.get("./health");
       setHealth(result.data);
     }
 
     fetchData();
   }, []);
-
-
 
   return (
     <div className="App">

@@ -19,8 +19,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "lint": "npm run lint:fix",
     "lint:check": "eslint src",
     "lint:fix": "eslint --fix src",
+    "format": "npm run format:fix",
     "format:check": "prettier --list-different src",
     "format:fix": "prettier --write src",
     "start:local": "react-scripts start",

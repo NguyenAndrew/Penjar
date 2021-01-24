@@ -34,7 +34,9 @@
     "build:windows": "set INLINE_RUNTIME_CHUNK=false&& react-scripts build",
     "build:linux": "INLINE_RUNTIME_CHUNK=false react-scripts build",
     "build:mac": "INLINE_RUNTIME_CHUNK=false react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
+    "test:coverage": "react-scripts test --watchAll=false --coverage",
+    "test:watch": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "browserslist": {

@@ -4,9 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.23.0] - 2021-1-24
+### Changed
+- Updated all dependencies on frontend
+
 ## [0.22.0] - 2021-1-24
 ### Added
-- Add dependup command to the frontend, which updates all dependencies on the frontend
+- Added dependup command to the frontend, which updates all dependencies on the frontend
 
 ## [0.21.0] - 2021-1-24
 ### Changed
@@ -14,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.20.0] - 2021-1-24
 ### Added
-- Add dependup command to the backend, which updates all dependencies on the backend
+- Added dependup command to the backend, which updates all dependencies on the backend
 
 ## [0.19.0] - 2021-1-24
 ### Added

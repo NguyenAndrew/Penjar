@@ -24,6 +24,14 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 3. Make changes
 4. Click save button!
 
+## Quickstart - Upgrading (Updating) all dependencies
+1. Note: This command will update dependencies in the following folders: run_locally, back_end, and front_end
+2. Navigate to the run_locally directory
+3. Open terminal of choice in the run_locally directory
+4. Check which dependencies need to be upgraded with ```npm run dependup:check```
+5. Upgrade all dependencies with ```npm run dependup```
+6. Upgrade dependencies in your package-lock.json with ```npm install`
+
 ## Quickstart - (Optional) Configuring a database
 1. Navigate to the back_end directory
 2. For local setup: Create a database.json file in the **src/database** directory, configure this information with database credentials (Note: database.json in back_end directory is excluded by git in .gitignore).

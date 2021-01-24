@@ -4,9 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.25.0] - 2021-1-24
+### Added
+- Updated package-lock on frontend
+
 ## [0.24.0] - 2021-1-24
 ### Added
-- Added dependup command  in running locally to have one convenient area to upgrade (update) dependencies across entire project
+- Added dependup command in running locally to have one convenient area to upgrade (update) dependencies across entire project
 - Added dependup instructions to README
 
 ## [0.23.0] - 2021-1-24

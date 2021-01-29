@@ -1,6 +1,6 @@
 # Penjar - PostgreSQL Express Node Jest Axios React
 
-Penjar.js is the fastest way to spin up a Full Stack application (React + Node) with Jest testing. Evolution and based off of the [Careen](https://github.com/NguyenAndrew/careen) stack. 
+Penjar is the fastest way to spin up a Full Stack application (React + Node) with Jest testing. Evolution and based off of the [Careen](https://github.com/NguyenAndrew/careen) stack. Now using TypeScript!
 
 ## Architecture
 

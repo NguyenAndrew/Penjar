@@ -40,3 +40,4 @@ Penjar.js is the fastest way to spin up a Full Stack application (React + Node) 
 
 ## Roadmap
 * Add rest of tests for existing code on the back end
+* Create resuable configuration on backend to replace database only configuration. Creating an easy and intuitive experience when defining different values per deployment environment (Example: Local vs Development vs Testing vs Production vs Any other deployment environments specific for your workflow) - https://en.wikipedia.org/wiki/Deployment_environment

@@ -27,9 +27,11 @@ function App(): JSX.Element {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          {health}
-        </a>
+        ></a>
+        Learn React
+        <br />
+        <br />
+        The health of the backend: {health ? health : "Backend is Offline"}
       </header>
     </div>
   );

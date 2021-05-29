@@ -31,6 +31,7 @@ Penjar is the fastest way to spin up a Full Stack application (React + Node) wit
 4. Check which dependencies need to be upgraded with ```npm run dependup:check```
 5. Upgrade all dependencies with ```npm run dependup```
 6. Upgrade dependencies in your package-lock.json with ```npm install```
+7. Optinal: Check to see which dependencies were not updated (due to failing tests) with ```npm run dependup:check```
 
 ## Quickstart - (Optional) Configuring a database
 1. Navigate to the back_end directory

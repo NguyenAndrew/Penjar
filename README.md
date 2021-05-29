@@ -30,7 +30,7 @@ Penjar is the fastest way to spin up a Full Stack application (React + Node) wit
 3. Open terminal of choice in the run_locally directory
 4. Check which dependencies need to be upgraded with ```npm run dependup:check```
 5. Upgrade all dependencies with ```npm run dependup```
-6. Upgrade dependencies in your package-lock.json with ```npm install`
+6. Upgrade dependencies in your package-lock.json with ```npm install```
 
 ## Quickstart - (Optional) Configuring a database
 1. Navigate to the back_end directory

@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "tsc --outDir build && copyfiles --up 1 --exclude \"src/**/*.ts\" \"src/**/*\" build",
+    "build": "tsc && copyfiles --up 1 --exclude \"src/**/*.ts\" \"src/**/*\" build",
     "clean:build": "rimraf build",
     "lint": "npm run lint:fix",
     "lint:check": "eslint src test",

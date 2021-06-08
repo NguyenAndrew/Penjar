@@ -24,6 +24,6 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^6.2.0",
-    "npm-check-updates": "^11.5.13"
+    "npm-check-updates": "^11.6.0"
   }
 }

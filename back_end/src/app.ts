@@ -1,7 +1,8 @@
 import axios from "axios";
 import path from "path";
 import express, { Request, Response } from "express";
-import helmet from "helmet";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const helmet = require("helmet");
 import "./database/databaseInfo";
 import databaseInfo from "./database/databaseInfo";
 import host from "./host/host";

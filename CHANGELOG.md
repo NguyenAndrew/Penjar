@@ -4,9 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.35.0] - 2021-6-08
+### Added
+- Updated dependencies to latest version in backend and frontend
+
+### Fixed
+- Fixed test configuration in backend to not scan for tests in build and node_modules directories
+
 ## [0.34.0] - 2021-6-08
 ### Added
-- Create resuable configuration system on backend to replace database only configuration. Creating an easy and intuitive experience when defining different values per deployment environment (Example: Local vs Development vs Testing vs Production vs Any other deployment environments specific for your workflow) - https://en.wikipedia.org/wiki/Deployment_environment
+- Created resuable configuration system on backend to replace database only configuration. Creating an easy and intuitive experience when defining different values per deployment environment (Example: Local vs Development vs Testing vs Production vs Any other deployment environments specific for your workflow) - https://en.wikipedia.org/wiki/Deployment_environment
 
 ### Removed
 - Database info system (because it was replaced with configuration system)

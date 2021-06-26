@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.36.0] - 2021-6-25
+### Fixed
+- Fixed backend copying of non typescript files to the correct directory. Changed occured due to updated compilation with the TypeScript outdir
+
 ## [0.35.0] - 2021-6-08
 ### Added
 - Updated dependencies to latest version in backend and frontend

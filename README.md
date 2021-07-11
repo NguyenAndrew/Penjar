@@ -33,11 +33,10 @@ Penjar is the fastest way to spin up a Full Stack application (React + Node) wit
 6. Upgrade dependencies in your package-lock.json with ```npm install```
 7. Optional: Check to see which dependencies were not updated (due to failing tests) with ```npm run dependup:check```
 
-## Quickstart - (Optional) Configuring a database
+## Quickstart - Configuring a database / Adding environment based configuration
 1. Navigate to the back_end directory
-2. For local setup: Create a database.json file in the **src/database** directory, configure this information with database credentials (Note: database.json in back_end directory is excluded by git in .gitignore).
-3. For cloud setup: Place database credentials within env variables, parse this information by inserting custom code into databaseInfo.ts
-4. Configure database client
+2. Within the "config" directory, add variables that either load in "hard coded values" or "reads from environment variables", which will be used to create the config object
+3. Optional: Using config object, you can obtain values needed to setup a database client
 
 ## Roadmap
 * Add rest of tests for existing code on the back end

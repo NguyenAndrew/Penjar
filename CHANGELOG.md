@@ -4,7 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.37.0] - 2021-6-25
+## [0.38.0] - 2021-7-10
+### Fixed
+- Fixed dates on changelog
+- Database instructions for backend on README
+
+### Added
+- Format and lint backend
+- Configuration instructions for backend on README
+
+## [0.37.0] - 2021-7-10
 ### Added
 - Updated all dependencies across the project
 

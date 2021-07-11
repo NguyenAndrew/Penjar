@@ -1,6 +1,6 @@
 interface configTemplate {
   port: number;
-  serveFrontEnd?: boolean
+  serveFrontEnd?: boolean;
 }
 
 export default configTemplate;

@@ -15,8 +15,8 @@ const port = config.port;
 app.use(helmet());
 
 app.get("/health", (req: Request, res: Response) => {
-  res.status(200).send("Healthy!");
   axios.post(`${host}/axios-test`);
+  res.status(200).send("Healthy!");
 });
 
 app.post("/axios-test", (req: Request, res: Response) => {
